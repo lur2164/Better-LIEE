@@ -1,0 +1,169 @@
+/* Общие стили */
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+body {
+    font-family: "Saira", serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+  /* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #121212;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+/*.header .tg-button {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Saira", serif;
+}
+
+button {
+  width: 55px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #121212;
+  border-color: #fff;
+  color: #fff;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  
+  
+}
+*/
+
+
+
+  .header .company-name {
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #333;
+    height: calc(100vh - 60px); /* Вычитаем высоту хедера */
+    position: fixed;
+    top: 60px; /* Под хедером */
+    left: 0;
+  }
+  
+  .sidebar .navigation ul {
+    list-style: none;
+  }
+  
+  .sidebar .navigation ul li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar .navigation ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar .navigation ul li a:hover {
+    background-color: #333; /* Серая рамка с закругленными краями */
+  }
+  
+  .sidebar .navigation ul li a .icon-placeholder {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #444; /* Заглушка для иконки */
+    border-radius: 4px;
+  }
+  
+  .sidebar .profile {
+    margin-top: auto;
+  }
+  
+  .sidebar .profile a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar .profile a:hover {
+    background-color: #333; /* Серая рамка с закругленными краями */
+  }
+  
+  /* Main Content */
+  .content {
+    margin-left: 250px; /* Ширина сайдбара */
+    margin-top: 60px; /* Высота хедера */
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+  }
+  .sidebar .navigation ul li a .icon {
+    display: inline-block;
+    width: 20px; /* Фиксированная ширина иконки */
+    height: 20px; /* Фиксированная высота иконки */
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+    object-fit: cover; /* Изображение масштабируется, чтобы заполнить область */
+    border-radius: 4px; /* Закругленные края (опционально) */
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+
+  
